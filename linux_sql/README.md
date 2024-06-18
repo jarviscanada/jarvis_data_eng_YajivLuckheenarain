@@ -59,7 +59,11 @@ With these commands, you can quickly set up the project and begin monitoring you
 # Implementation
 
 ## Architecture
-![Cluster Diagram](assets/Clustering%20Diagram.png)
+
+<div align="center">
+  <img src="assets/Clustering%20Diagram.png" alt="Cluster Diagram" width="600"/>
+</div>
+
 
 
 ## Scripts
