@@ -38,8 +38,12 @@ To quickly set up and run the project, follow these commands:
 
       ```sh
       psql -h localhost -U [username] -W
-      # Enter your password when prompted
+      ```
+
+      ```sql
+      -- Enter your password when prompted
       CREATE DATABASE host_agent;
+      \q
       ```
 
    2. Run the DDL script to create tables:
@@ -47,6 +51,7 @@ To quickly set up and run the project, follow these commands:
       ```sh
       psql -h localhost -U [username] -d host_agent -f sql/ddl.sql
       ```
+
 
 4. Collect hardware info and store it in the database:
     ```sh
