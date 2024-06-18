@@ -92,6 +92,33 @@ Describe the schema of each table using markdown table syntax (do not put any sq
 - `host_info`
 - `host_usage`
 
+### host_info Table Schema
+
+| Column Name       | Data Type | Constraints        | Description                  |
+|-------------------|-----------|--------------------|------------------------------|
+| id                | SERIAL    | PRIMARY KEY        | Unique identifier            |
+| hostname          | VARCHAR   | NOT NULL, UNIQUE   | Hostname                     |
+| cpu_number        | INT2      | NOT NULL           | Number of CPUs               |
+| cpu_architecture  | VARCHAR   | NOT NULL           | CPU architecture             |
+| cpu_model         | VARCHAR   | NOT NULL           | CPU model                    |
+| cpu_mhz           | FLOAT8    | NOT NULL           | CPU clock speed (MHz)        |
+| l2_cache          | INT4      | NOT NULL           | L2 cache size (bytes)        |
+| timestamp         | TIMESTAMP |                    | Timestamp of data insertion  |
+| total_mem         | INT4      |                    | Total memory (optional)      |
+
+### host_usage Table Schema
+
+| Column Name       | Data Type | Constraints        | Description                    |
+|-------------------|-----------|--------------------|--------------------------------|
+| timestamp         | TIMESTAMP | NOT NULL           | Timestamp of data recording    |
+| host_id           | SERIAL    | NOT NULL           | Host identifier (foreign key)  |
+| memory_free       | INT4      | NOT NULL           | Free memory in bytes           |
+| cpu_idle          | INT2      | NOT NULL           | Idle CPU percentage            |
+| cpu_kernel        | INT2      | NOT NULL           | Kernel CPU percentage          |
+| disk_io           | INT4      | NOT NULL           | Disk I/O operations           |
+| disk_available    | INT4      | NOT NULL           | Available disk space (bytes)   |
+
+
 # Test
 How did you test your bash scripts DDL? What was the result?
 
@@ -104,3 +131,21 @@ e.g.
 - handle hardware updates 
 - blah
 - blah
+
+# Improvements
+
+1. **Unified Script Execution**:
+   - **Goal**: Abstract all individual scripts into one executable for easier quick start.
+   - **Description**: Combine scripts or create a master script that automates the setup process, reducing the complexity of running multiple commands manually.
+   - **Benefits**: Simplifies onboarding for new users, reduces potential for errors, and ensures consistency in deployment steps.
+
+2. **Controlled Output Visibility**:
+   - **Goal**: Provide options to control visibility of intermediate outputs, especially for commands like Docker container creation.
+   - **Description**: Implement flags or options in scripts to toggle verbose or silent modes, allowing users to decide whether they want to see detailed outputs or suppress them (e.g., redirecting stdout to `/dev/null`).
+   - **Benefits**: Enhances user experience by reducing clutter in terminal outputs, while still allowing users to debug or monitor processes when needed.
+
+3. **Improved Database Interaction Interface**:
+   - **Goal**: Develop a cleaner interface for interacting with databases, particularly when reading data through the terminal.
+   - **Description**: Enhance scripts or create utilities that improve readability and usability when querying or viewing database contents, possibly incorporating formatted outputs or interactive prompts.
+   - **Benefits**: Facilitates easier data inspection and understanding, especially in complex or large datasets, enhancing productivity and troubleshooting capabilities.
+
