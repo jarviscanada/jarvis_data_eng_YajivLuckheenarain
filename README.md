@@ -17,22 +17,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_YajivLuckh
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/linux_sql)]: Implemented a robust system monitoring solution, utilizing Dockerized PostgreSQL and Bash scripts for efficient data collection, storage, and management in a Linux environment.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain/tree/master/cloud_devops)]: Not Started
-
 
 ## Highlighted Projects
 **Reinforcement Learning Ms.Pacman**: Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model's gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay.
