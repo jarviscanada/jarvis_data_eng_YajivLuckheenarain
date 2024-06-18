@@ -86,6 +86,40 @@ Shell script description and usage (use markdown code block for script usage)
 - host_usage.sh
 - crontab
 - queries.sql (describe what business problem you are trying to resolve)
+  
+
+## Scripts
+
+### psql_docker.sh
+
+**Description**: Manages PostgreSQL Docker instance creation and startup.
+
+**Usage**:
+```sh
+./scripts/psql_docker.sh create [username] [password]
+./scripts/psql_docker.sh start
+./scripts/psql_docker.sh stop
+```
+
+### host_info.sh
+
+**Description**: Gathers hardware specifications and inserts data into the host_info table.
+
+**Usage**:
+```sh
+./scripts/host_info.sh localhost 5432 host_agent [username] [password]
+```
+
+### host_usage.sh
+
+**Description**: Logs dynamic resource usage data into the host_usage table via cron job.
+
+**Usage**:
+```sh
+# Add this line to crontab for periodic execution:
+* * * * * /path/to/project/host_usage.sh localhost 5432 host_agent [username] [password] > /tmp/host_usage.log
+```
+
 
 ## Database Modeling
 Describe the schema of each table using markdown table syntax (do not put any sql code)
