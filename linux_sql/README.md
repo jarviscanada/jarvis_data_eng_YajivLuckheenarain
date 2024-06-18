@@ -37,7 +37,7 @@ To quickly set up and run the project, follow these commands:
    1. **Optional**: Create the `host_agent` database if it doesn't exist:
 
       ```sh
-      psql -h localhost -U postgres -W
+      psql -h localhost -U [username] -W
       # Enter your password when prompted
       CREATE DATABASE host_agent;
       ```
