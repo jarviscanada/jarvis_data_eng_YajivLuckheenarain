@@ -75,6 +75,10 @@ Discuss how you implement the project.
 ## Architecture
 Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io website). Image must be saved to the `assets` directory.
 
+![Cluster Diagram](assets/Clustering%20Diagram.png)
+
+
+
 ## Scripts
 Shell script description and usage (use markdown code block for script usage)
 - psql_docker.sh
