@@ -1,0 +1,126 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Golden Key Member (McGill top 15%)",
+        "GPA: 3.75/4.0"
+      ],
+      "degree": "Bachelor of Engineering in Electrical Engineering",
+      "department": "Electrical and Computer Engineering",
+      "duration": "2020-2024",
+      "school_name": "McGill University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain",
+  "highlighted_projects": [
+    {
+      "description": "Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model?s gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay.",
+      "git_url": "",
+      "name": "Reinforcement Learning Ms.Pacman"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Implemented a robust system monitoring solution, utilizing Dockerized PostgreSQL and Bash scripts for efficient data collection, storage, and management in a Linux environment.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Yajiv Luckheenarain",
+  "others": [
+    {
+      "bullets": [
+        "HackerRank Software Engineering"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Excellence Bursary for Computer Science, Computer Engineering and Computer Construction, and Electrical, Electronic and Communications Engineering"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Volleyball player",
+        "Chess Player",
+        "Pianist",
+        "Bouldering"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Implemented various projects utilizing various technologies including Linux/SQL/Python/Hadoop/Springboot/Spark/Cloud/DevOPS",
+      "duration": "2024-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Soundskrit INC",
+      "description": "Designed and implemented MySQL databases. Developed Python scripts to abstraction batch scripts responsible for configuring bias and gain voltages in microphones.",
+      "duration": "2022-2024",
+      "title": "Electrical Engineer Intern"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "RDBMS/SQL",
+      "C++",
+      "ARM (Advanced RISC Machine)",
+      "Verilog (Hardware Description Language)",
+      "DSA (Data Structures and Algorithms)"
+    ],
+    "familiar": [
+      "Docker",
+      "Google Cloud Services",
+      "C",
+      "AWS (Amazon Web Services)",
+      "Docker"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "Python",
+      "Agile/Scrum",
+      "Git",
+      "Computer Vision"
+    ]
+  },
+  "summary": "My name is Yajiv Luckheenarain and I hold a Bachelor's degree in Electrical Engineering from McGill University. Professionally, I have worked as a software engineer intern, specializing in data and testing, at Soundskrit INC. What excites me most about the software industry is the rapid advancements in machine learning and artificial intelligence. I am passionate about leveraging these technologies to automate tasks and enhance efficiency."
+}
