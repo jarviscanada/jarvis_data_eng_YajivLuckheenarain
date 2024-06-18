@@ -56,7 +56,7 @@ To quickly set up and run the project, follow these commands:
 With these commands, you can quickly set up the project and begin monitoring your linux host.
 
 
-# Implemenation
+# Implementation
 
 ## Architecture
 Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io website). Image must be saved to the `assets` directory.
