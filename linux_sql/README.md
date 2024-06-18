@@ -78,7 +78,6 @@ Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io web
 ![Cluster Diagram](assets/Clustering%20Diagram.png)
 
 
-
 ## Scripts
 Shell script description and usage (use markdown code block for script usage)
 - psql_docker.sh
@@ -112,14 +111,12 @@ Shell script description and usage (use markdown code block for script usage)
 
 ### host_usage.sh
 
-**Description**: Logs dynamic resource usage data into the host_usage table via cron job.
+**Description**: Logs dynamic resource usage data into the host_usage table.
 
 **Usage**:
 ```sh
-# Add this line to crontab for periodic execution:
-* * * * * /path/to/project/host_usage.sh localhost 5432 host_agent [username] [password] > /tmp/host_usage.log
+./scripts/host_usage.sh localhost 5432 host_agent [username] [password] > /tmp/host_usage.log
 ```
-
 
 ## Database Modeling
 Describe the schema of each table using markdown table syntax (do not put any sql code)
