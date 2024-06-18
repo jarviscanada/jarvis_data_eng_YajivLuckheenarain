@@ -59,8 +59,6 @@ With these commands, you can quickly set up the project and begin monitoring you
 # Implementation
 
 ## Architecture
-Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io website). Image must be saved to the `assets` directory.
-
 ![Cluster Diagram](assets/Clustering%20Diagram.png)
 
 
