@@ -45,7 +45,7 @@ To quickly set up and run the project, follow these commands:
    2. Run the DDL script to create tables:
 
       ```sh
-      psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+      psql -h localhost -U [username] -d host_agent -f sql/ddl.sql
       ```
 
 4. Collect hardware info and store it in the database:
