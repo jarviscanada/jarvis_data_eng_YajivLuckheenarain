@@ -1,20 +1,6 @@
-Note: You are NOT allowed to copy any content from the scrum board, including text, diagrams, code, etc. Your Github will be visible and shared with Jarvis clients, so you have to create unique content that impresses your future boss😎.
-
-# Introduction
-(about 100-150 words)
-Discuss the design of the project. What does this project/product do? Who are the users? What are the technologies you have used? (e.g. bash, docker, git, etc..)
-
 This project is designed to monitor and log hardware specifications and dynamic resource usage of a computer system. It targets system administrators and developers who need to track and analyze system performance. The core functionality is implemented using several technologies including Bash, Docker, Git, and PostgreSQL.
 
 The project employs a psql_docker.sh shell script to create a PostgreSQL Docker instance and a Docker volume. A ddl.sql file initializes two PostgreSQL tables: host_info and host_usage, if they do not already exist. The host_info.sh script, executed once, gathers hardware specifications of the host computer and stores this data in the host_info table, which uniquely identifies the computer. The host_usage.sh script runs periodically via a cron job every minute. It retrieves the host identifier and logs the current resource usage into the host_usage table. The project is developed and operated in a Linux environment.
-
-# Quick Start
-Use markdown code block for your quick-start commands
-- Start a psql instance using psql_docker.sh
-- Create tables using ddl.sql
-- Insert hardware specs data into the DB using host_info.sh
-- Insert hardware usage data into the DB using host_usage.sh
-- Crontab setup
 
 # Quick Start
 
@@ -28,6 +14,7 @@ To quickly set up and run the project, follow these commands:
 
 2. Create and Start the PostgreSQL Docker instance:
     ```sh
+    #Choose your own username/password at instantiation
     ./scripts/psql_docker.sh create [username] [password]
     ./scripts/psql_docker.sh start
     ```
@@ -66,26 +53,16 @@ To quickly set up and run the project, follow these commands:
     #Press "esc" to enter normal mode then ":wq" then "Enter" to save and exit the cronjob editor
     ```
 
-With these commands, you can quickly set up the project and begin monitoring your system.
-
+With these commands, you can quickly set up the project and begin monitoring your linux host.
 
 
 # Implemenation
-Discuss how you implement the project.
+
 ## Architecture
 Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io website). Image must be saved to the `assets` directory.
 
 ![Cluster Diagram](assets/Clustering%20Diagram.png)
 
-
-## Scripts
-Shell script description and usage (use markdown code block for script usage)
-- psql_docker.sh
-- host_info.sh
-- host_usage.sh
-- crontab
-- queries.sql (describe what business problem you are trying to resolve)
-  
 
 ## Scripts
 
@@ -115,13 +92,10 @@ Shell script description and usage (use markdown code block for script usage)
 
 **Usage**:
 ```sh
-./scripts/host_usage.sh localhost 5432 host_agent [username] [password] > /tmp/host_usage.log
+./scripts/host_usage.sh localhost 5432 host_agent [username] [password] 
 ```
 
 ## Database Modeling
-Describe the schema of each table using markdown table syntax (do not put any sql code)
-- `host_info`
-- `host_usage`
 
 ### host_info Table Schema
 
@@ -151,17 +125,37 @@ Describe the schema of each table using markdown table syntax (do not put any sq
 
 
 # Test
-How did you test your bash scripts DDL? What was the result?
+
+## Overview
+
+The testing process involved running each script individually and then together to ensure consistent and correct functionality.
+
+### Testing Process
+
+1. **Individual Script Testing**:
+    - **psql_docker.sh**: Verified successful creation and start of the PostgreSQL Docker container with the specified user and password.
+    - **ddl.sql**: Verified the creation of `host_info` and `host_usage` tables with the correct schema and constraints.
+
+    - **host_info.sh**: Confirmed accurate collection and insertion of hardware specifications into the `host_info` table.
+    - **host_usage.sh**: Ensured correct gathering and insertion of resource usage data into the `host_usage` table as well as functional cronjob setup.
+
+2. **Combined Script Testing**:
+    - Executed the entire workflow sequentially, from creating the Docker instance to running the DDL script and executing `host_info.sh` and `host_usage.sh`.
+
 
 # Deployment
-How did you deploy your app? (e.g. Github, crontab, docker)
 
-# Improvements
-Write at least three things you want to improve 
-e.g. 
-- handle hardware updates 
-- blah
-- blah
+The app was deployed using GitHub to manage and share the repository containing all the necessary files and scripts. The deployment process involved the following steps:
+
+1. **GitHub**: 
+   - The entire project, including the Bash scripts, DDL files, and documentation, was pushed to a GitHub repository.
+     
+2. **Crontab**: 
+   - A cron job was set up to run the `host_usage.sh` script every minute, ensuring continuous monitoring and logging of system resource usage.
+
+3. **Docker**: 
+   - A PostgreSQL Docker container was created and managed using the `psql_docker.sh` script, providing a consistent and isolated environment for the database.
+
 
 # Improvements
 
