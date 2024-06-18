@@ -63,7 +63,7 @@ To quickly set up and run the project, follow these commands:
     crontab -e
     #Press "i" to enter insert mode and write the following line with the previously defined username/password to the crontab file:
     * * * * * /path/to/project/host_usage.sh localhost 5432 host_agent [username] [password] > /tmp/host_usage.log
-    #Press "esc" to enter normal mode then ":wq" + "Enter" to save and exit the cronjob editor
+    #Press "esc" to enter normal mode then ":wq" then "Enter" to save and exit the cronjob editor
     ```
 
 With these commands, you can quickly set up the project and begin monitoring your system.
