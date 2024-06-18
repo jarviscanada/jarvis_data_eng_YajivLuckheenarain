@@ -14,7 +14,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain",
   "highlighted_projects": [
     {
-      "description": "Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model?s gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay.",
+      "description": "Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model's gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay.",
       "git_url": "",
       "name": "Reinforcement Learning Ms.Pacman"
     }

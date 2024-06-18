@@ -35,7 +35,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_YajivLuckh
 
 
 ## Highlighted Projects
-**Reinforcement Learning Ms.Pacman**: Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model?s gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay.
+**Reinforcement Learning Ms.Pacman**: Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model's gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay.
 
 
 ## Professional Experiences

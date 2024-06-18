@@ -69,12 +69,11 @@ highlighted_projects:
     #URL is optional
     git_url: ""
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model?s gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay."
+    description: "Developed a reinforcement learning model to train an agent to play Ms. PacMan autonomously. Implemented deep Q-learning algorithms with hyperparameter tuning to optimize the model's gameplay strategy. Utilized OpenAI Gym environment and Pygame library for simulation and visualization of Ms. PacMan gameplay."
 
 
 
-#List of professional experience
-#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#List of professional experience #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
