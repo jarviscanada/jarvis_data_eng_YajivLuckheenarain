@@ -318,6 +318,5 @@ select substr (mems.surname,1,1) as letter, count(*) as count
     order by letter   
 ```
 
-EOF
 
 
