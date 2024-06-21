@@ -1,3 +1,47 @@
+
+# Introduction
+This RDBMS and SQL project sets up a PostgreSQL instance using Docker and runs a database script clubdata.sql to generate a database named exercises, along with three tables: cd.bookings, cd.members, and cd.facilities. It is designed to train users in writing and executing PostgreSQL queries. The project is intended for developers, database administrators, and students who are looking to enhance their SQL skills.
+
+The technologies used in this project include Bash scripting, Docker for containerization, and Git for version control. The project can be executed on a Linux host through DBeaver, a graphical database management tool, but it can also be run through the PostgreSQL command-line interface (psql). All queries are documented in the README.md file, and their answers are provided in SQL markdown format. Additionally, there is a queries.sql file containing all the queries without the accompanying questions.
+
+# Quick Start
+
+To quickly set up and run the project, follow these commands:
+
+1. Clone the repository and change into the linux_sql directory:
+    ```sh
+    git clone https://github.com/jarviscanada/jarvis_data_eng_YajivLuckheenarain.git
+    cd jarvis_data_eng_YajivLuckheenarain/sql
+    ```
+
+2. Create and start a psql instance using docker:
+    ```sh
+    #Travel to the docker scripts directory
+    cd ../linux_sql/scripts
+    #Create a psql instance. Choose your own credentials.
+    ./psql_docker.sh create [username] [password]    
+    ./psql_docker.sh start
+    ```
+
+3. Connect to the psql instance and run the clubdata.sql file. It will create the database and tables relevant to these queries:
+    ```sh
+    #Return to the sql project directory
+    cd ../linux_sql/scripts
+    #Run the clubdata.sql script through psql using your credentials 
+    psql -U [username] -f clubdata.sql -d postgres -x -q
+    ```
+
+4. Connect to the psql instance and answer the relevant questions below. I have provided the corresponding solutions.
+    ```sh
+    psql -h localhost -p 5432 -U [username]
+    ```
+    ```sql
+    --Connect to the exercises database
+    \c exercises
+    ```
+
+You should be able to start answering these questions through your queries from this point on.
+    
 # SQL Queries
 
 ###### Table Setup (DDL)
