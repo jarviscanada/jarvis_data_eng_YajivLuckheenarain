@@ -40,7 +40,7 @@ To quickly set up and run the project, follow these commands:
     \c exercises
     ```
 
-You should be able to start answering these questions through your queries from this point on.
+You should be able to start answering these questions through your queries from this point on. You can ignore the following Table Setup as they are created through the clubdata.sql script. It is there to help you understand what the data you are working with looks like.
     
 # SQL Queries
 
